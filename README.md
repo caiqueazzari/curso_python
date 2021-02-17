@@ -1,2 +1,3 @@
-# Python-curso-em-video
+# Python Curso em Vídeo
+
 Desafios do curso de Python do Guanabara
