@@ -1,4 +1,4 @@
-#Python Curso em Vídeo
+# Python Curso em Vídeo
 
 Exercícios do curso de Python do Guanabara.
 
