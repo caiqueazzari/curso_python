@@ -5,6 +5,6 @@ print(f'A tabuada do número {n} é: \n')
 x = 0
 
 for x in range(11):
-    print(f'{n} x {x} = {n * x}')
+    print(f'{n} x {x:2} = {n * x}')
     x + 1
 
