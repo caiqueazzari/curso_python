@@ -5,7 +5,7 @@
 - Quantas letras tem o primeiro nome.'''
 
 name = str(input('Digite o seu nome completo: '))
-print(f'Olá {name.strip().capitalize()}! \nO seu nome com todas as letras maiúsculas: {name.upper().strip()}')
+print(f'Olá {name.strip().title()}! \nO seu nome com todas as letras maiúsculas: {name.upper().strip()}')
 print(f'O seu nome com todas as letras minúsculas: {name.lower().strip()}')
 lista = name.split()
 print(f'O seu nome contém {len(name.strip().replace(" ", ""))} letras!')
