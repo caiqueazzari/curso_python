@@ -9,16 +9,20 @@ print('\033[1mAlistamento militar!')
 print('\033[31m=*=' * 7)
 
 idade = int(input('\033[mInforme a sua idade: '))
+sexo = str(input('Informe o seu sexo (M/F): ')).upper()
 
-if idade <= 17:
-    if (18 - idade) == 1:
-        print(f'Você deverá se alistar daqui {18 - idade} ano.')
-    elif (18 - idade) != 1:
-        print(f'Você deverá se alistar daqui {18 - idade} anos.')
-elif idade == 18:
-    print('Já é hora de se alistar!')
-elif idade > 18:
-    if idade == 19:
-        print('Você deveria ter se alistado no ano passado! Vá até a JMS mais próxima da sua casa imediatamente!')
-    if idade > 19:
-        print(f'Você deveria ter se alistado há {idade - 18} anos! Vá até a JMS mais próxima da sua casa imediatamente!')
+if sexo == 'M':
+    if idade <= 17:
+        if (18 - idade) == 1:
+            print(f'Você deverá se alistar daqui {18 - idade} ano.')
+        elif (18 - idade) != 1:
+            print(f'Você deverá se alistar daqui {18 - idade} anos.')
+    elif idade == 18:
+        print('Já é hora de se alistar!')
+    elif idade > 18:
+        if idade == 19:
+            print('Você deveria ter se alistado no ano passado! Vá até a JMS mais próxima da sua casa imediatamente!')
+        if idade > 19:
+            print(f'Você deveria ter se alistado há {idade - 18} anos! Vá até a JMS mais próxima da sua casa imediatamente!')
+else:
+    print('Você não precisa fazer alistamento militar obrigatório.')
