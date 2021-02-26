@@ -1,4 +1,4 @@
-  '''Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão:
+'''Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão:
 - 1 para binário
 - 2 para octal
 - 3 para hexadecimal'''
@@ -15,10 +15,11 @@ print('Processando...')
 sleep(3)
 
 if base == 1:
-    print(f'A conversão do número {num} em binário é: {bin(num)}')
+    print(f'A conversão do número {num} em binário é: {bin(num)[2:]}')
 elif base == 2:
-    print(f'A conversão do número {num} em octal é: {oct(num)}')
+    print(f'A conversão do número {num} em octal é: {oct(num)[2:]}')
 elif base == 3:
-    print(f'A conversão do número {num} em hexadecimal é: {hex(num)}')
+    print(f'A conversão do número {num} em hexadecimal é: {hex(num)[2:]}')
 else:
     print('Número inválido!')
+
