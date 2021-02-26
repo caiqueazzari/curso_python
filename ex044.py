@@ -4,6 +4,8 @@
 - Em até 2x no cartão: preço normal.
 - 3x ou mais no cartão: 20% de juros.'''
 
+from time import sleep
+
 preço = str(input('Digite o preço do produto: R$'))
 preço = float(preço.replace(',', '.'))
 pagamento = int(input('Opções de pagamento:'
@@ -13,6 +15,9 @@ pagamento = int(input('Opções de pagamento:'
                       '\n\t4 - 2x no cartão: 0% de desconto'
                       '\n\t5 - 3x ou mais no cartão: 20% de juros'
                       '\nDigite a opção de pagamento: '))
+print('Processando..')
+sleep(3)
+
 if pagamento == 1 or pagamento == 2:
     print(f'Valor a ser pago pelo produto: R${preço - (preço * 0.10):.2f}')
 elif pagamento == 3:
