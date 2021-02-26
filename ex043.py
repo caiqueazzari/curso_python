@@ -6,6 +6,8 @@ com a tabela abaixo:
 - 30 até 40: Obesidade.
 - Acima de 40: Obesidade morbida.'''
 
+from time import sleep
+
 print('\033[31m=*=' * 5)
 print('Calculo do IMC')
 print('=*=' * 5)
@@ -16,6 +18,8 @@ altura = str(input('Digite a altura: '))
 peso = float(peso.replace(',', '.'))
 altura = float(altura.replace(',', '.'))
 imc = peso / (altura * altura)
+print('Processando..')
+sleep(3)
 
 if imc < 18.5:
     print('Está abaixo do peso!')
