@@ -17,19 +17,20 @@ altura = str(input('Digite a altura: '))
 
 peso = float(peso.replace(',', '.'))
 altura = float(altura.replace(',', '.'))
-imc = peso / (altura * altura)
+imc = peso / (altura ** 2)
 print('Processando..')
 sleep(3)
+print(f'O IMC dessa pessoa é de: {imc:.1f}')
 
 if imc < 18.5:
-    print('Está abaixo do peso!')
+    print('Ela está abaixo do peso!')
 elif imc >= 18.5 and imc <= 24.9:
-    print('Está com o peso ideal!')
+    print('Ela está com o peso ideal!')
 elif imc >= 25 and imc < 30:
-    print('Está acima do peso!')
+    print('Ela está acima do peso!')
 elif imc >= 30 and imc <= 40:
-    print('Está obeso!')
+    print('Ela está obeso!')
 elif imc > 40:
-    print('Está com obesidade morbida!')
+    print('Ela está com obesidade morbida!')
 else:
     print('Valores inválidos.')
