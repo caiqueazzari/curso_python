@@ -15,10 +15,15 @@ p = int(input('Faça a sua escolha!'
 pc = randint(1, 3)
 print('Processando..')
 sleep(2)
+print('Jo')
+sleep(1)
+print('Ken')
+sleep(1)
+print('Pô!!!')
 
 if p == pc:
     print('Empate!')
 elif p == 2 and pc == 1 or p == 1 and pc == 3 or p == 3 and pc == 2:
-    print('Droga! Você ganhou..')
+    print('Droga! Você ganhou...')
 elif pc == 2 and p == 1 or pc == 1 and p == 3 or pc == 3 and p == 2:
     print('Eu ganhei! HAHAHAHA!')
