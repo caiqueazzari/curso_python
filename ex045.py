@@ -3,16 +3,18 @@
 from time import sleep
 from random import randint
 
+escolhas = ('Pedra', 'Papel', 'Tesoura')
+
 print('\033[34m=*=' * 10)
 print('\t\t\t\033[1;38mJokenpô')
 print('\033[34m=*=' * 10)
-print('\033[mBem-vindo ao jogo! Você jogará contra mim, o seu computador!')
+print('\033[mBem-vindo!')
 p = int(input('Faça a sua escolha!'
                 '\n\t 1 - Pedra'
                 '\n\t 2 - Papel'
                 '\n\t 3 - Tesoura'
-                '\nDigite a sua escolha: '))
-pc = randint(1, 3)
+                '\nDigite a sua escolha: ')) - 1
+pc = randint(0, 2)
 print('Processando..')
 sleep(2)
 print('Jo')
@@ -21,9 +23,15 @@ print('Ken')
 sleep(1)
 print('Pô!!!')
 
+print('-=' * 15)
+print(f'O computador escolheu {escolhas[pc]}')
+print(f'O jogador escolheu {escolhas[p]}')
+print('-=' * 15)
+print('Resultado: ')
+
 if p == pc:
-    print('Empate!')
-elif p == 2 and pc == 1 or p == 1 and pc == 3 or p == 3 and pc == 2:
-    print('Droga! Você ganhou...')
-elif pc == 2 and p == 1 or pc == 1 and p == 3 or pc == 3 and p == 2:
-    print('Eu ganhei! HAHAHAHA!')
+    print('\033[1mEmpate!')
+elif p == 1 and pc == 0 or p == 0 and pc == 2 or p == 2 and pc == 1:
+    print('\033[1mJogador ganhou!')
+elif pc == 1 and p == 0 or pc == 0 and p == 2 or pc == 2 and p == 1:
+    print('\033[1mComputador ganhou!')
