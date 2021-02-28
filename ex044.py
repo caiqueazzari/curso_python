@@ -19,12 +19,13 @@ print('Processando..')
 sleep(3)
 
 if pagamento == 1 or pagamento == 2:
-    print(f'Valor a ser pago pelo produto: R${preço - (preço * 0.10):.2f}')
+    print(f'Valor a ser pago pelo produto: \033[1mR${preço - (preço * 0.10):.2f}')
 elif pagamento == 3:
-    print(f'Valor a se pagar pelo produto: R${preço - (preço * 0.05):.2f}')
+    print(f'Valor a se pagar pelo produto: \033[1mR${preço - (preço * 0.05):.2f}')
 elif pagamento == 4:
-    print(f'Valor a ser pago pelo produto: 2 parcelas de R${preço / 2:.2f}')
+    print(f'Valor a ser pago pelo produto: 2 parcelas de \033[1mR${preço / 2:.2f}')
 elif pagamento == 5:
-    print(f'Valor total a ser pago pelo produto: R${preço + (preço * 0.20):.2f}')
+    print(f'Valor total a ser pago pelo produto: \033[1mR${preço + (preço * 0.20):.2f}')
 else:
-    print('Opção inválida.')
+    print('\033[1mOpção inválida.')
+    
