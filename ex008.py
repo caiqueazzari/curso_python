@@ -3,4 +3,4 @@
 n = int(input('Digite um valor em metros: '))
 cm = n * 100
 mm = n * 1000
-print(f'{n}m equivalem {cm}cm e {mm}mm.')
+print(f'{n}m equivalem a {cm}cm e {mm}mm.')
