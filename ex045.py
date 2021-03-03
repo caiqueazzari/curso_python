@@ -32,6 +32,6 @@ print('Resultado: ')
 if p == pc:
     print('\033[1mEmpate!')
 elif p == 1 and pc == 0 or p == 0 and pc == 2 or p == 2 and pc == 1:
-    print('\033[1mJogador ganhou!')
+    print('\033[1mO jogador ganhou!')
 elif pc == 1 and p == 0 or pc == 0 and p == 2 or pc == 2 and p == 1:
-    print('\033[1mComputador ganhou!')
+    print('\033[1mO computador ganhou!')
