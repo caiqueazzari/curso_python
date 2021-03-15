@@ -20,10 +20,13 @@ while escolha != computador:
     print('\nProcessando...')
     sleep(1)
     palpites += 1
-    
+
     if escolha == computador:
         print(f'\nVocê acertou o número que o computador estava pensando! (\033[1;36m{escolha}\033[0;38m)')
         print('\n\t\033[32mParabéns!')
+        if palpites == 1:
+            print(f'\n \033[38mFoi necessário apenas \033[36m1 \033[38mpalpite para você vencer!')
+        else:
+            print(f'\n \033[38mForam necessários \033[36m{palpites} \033[38mpalpites para você vencer vencer!')
     else:
         print(f'\nO computador pensou no número \033[1;36m{computador}\033[0;38m, portanto você errou!\n\n\t\033[31mTente novamente!\n')
-    
