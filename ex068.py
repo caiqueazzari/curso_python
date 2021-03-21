@@ -22,7 +22,6 @@ while True:
 
     if escolha_p == 'I' or escolha_p == 'Í':
         escolha_c = 'P'
-
         if resultado == 1:
             print(f'\nSeu número: {num_p}\n\nNúmero do computador: {num_c}\n\n{num_p} + {num_c} = {num_c + num_p} = Ímpar')
             print(f'\n\033[1;32mVocê ganhou!\033[0;38m ')
@@ -30,10 +29,8 @@ while True:
             print(f'\nSeu número: {num_p}\n\nNúmero do computador: {num_c}\n\n{num_p} + {num_c} = {num_c + num_p} = Par')
             print('\n\033[1;31mVocê perdeu!\033[0;38m \n')
             break
-
     elif escolha_p == 'P':
         escolha_c = 'I'
-
         if resultado == 0:
             print(f'\nSeu número: {num_p}\n\nNúmero do computador: {num_c}\n\n{num_p} + {num_c} = {num_c + num_p} = Par')
             print(f'\n\033[1;32mVocê ganhou!\033[0;38m ')
@@ -41,7 +38,6 @@ while True:
             print(f'\nSeu número: {num_p}\n\nNúmero do computador: {num_c}\n\n{num_p} + {num_c} = {num_c + num_p} = Ímpar')
             print(f'\n\033[1;31mVocê perdeu! \033[0;38m\n')
             break
-
     else:
         print('\n\033[1;31mDigite uma escolha válida! \033[0;38mm')
 
