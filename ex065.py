@@ -11,18 +11,18 @@ while awnser != 'N':
         cont += 1
         soma += num
         lista.append(num)
-
-    awnser = str(input('\nDeseja continuar digitando números? (S/N) ')).strip().upper()[0]
-
-    if awnser == 'N':
+    elif awnser == 'N':
         print('\nProcessando..')
-
     else:
         print('\nDigite uma opção Válida!')
+
+    awnser = str(input('\nDeseja continuar digitando números? (S/N) ')).strip().upper()[0]
 
 if len(lista) == 1:
     print(f'\nVocê digitou apenas um número, o {num}.')
 else:
+    print('\n', '-=' * 20)
     print(f'\nVocê digitou {cont} números.')
     print(f'\nA média dos números digitados foi de {soma / cont}.')
     print(f'\nO maior valor digitado foi {max(lista)} e o menor foi {min(lista)}.')
+    print('\n', '-=' * 20)
