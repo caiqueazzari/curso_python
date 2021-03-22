@@ -21,10 +21,7 @@ while True:
     price = float(input('\nType the price of the product: R$'))
     totalSpent += price
 
-    if cheapest == 1:
-        cheapest = price
-        cheapestName = productName
-    if price < cheapest:
+    if cheapest == 1 or price < cheapest:
         cheapest = price
         cheapestName = productName
 
@@ -33,7 +30,7 @@ while True:
 
     awnser = ' '
     while awnser not in 'Y/N':
-        awnser = str(input('\nNeed to read one more product? (Y/N)')).strip().upper()[0]
+        awnser = str(input('\nNeed to read one more product? (Y/N) ')).strip().upper()[0]
 
     if awnser == 'Y':
         continue
