@@ -7,6 +7,8 @@ num_extenso = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete',
 
 while True:
     num = int(input('\nDigite um número entre 0 e 20: '))
+    
     if num >= 0 and num <= 20:
         break
+
 print(f'\nO número {num} por extenso é: {num_extenso[num]}')
