@@ -53,7 +53,7 @@ while True:
 print('\nProcessando..')
 sleep(2)
 
-print(f'\n\033[1;32mValor sacado:  {total}\033[0;38m\n')
+print(f'\n\033[1;32mValor sacado:  {total:.2f}\033[0;38m\n')
 
 if cedula100 > 1:
     print(f'{cedula100} celulas de R$100,00')
