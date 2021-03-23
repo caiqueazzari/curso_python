@@ -28,4 +28,4 @@ ordem = sorted(times)
 for x in range(0, 20):
     print(ordem[x])
 
-print('\nO Corinthians está na {}° posição.'.format(times.index('Corinthians')))
+print(f'\nO Corinthians está na {times.index("Corinthians")}° posição.')
