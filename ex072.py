@@ -5,5 +5,8 @@ Seu programa deverá ler um número pelo teclado(entre 0 e 20) e mostrá-lo por 
 num_extenso = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze',
                 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 
-num = int(input('\nDigite um número entre 0 e 20: '))
+while True:
+    num = int(input('\nDigite um número entre 0 e 20: '))
+    if num >= 0 and num <= 20:
+        break
 print(f'\nO número {num} por extenso é: {num_extenso[num]}')
