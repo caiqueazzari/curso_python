@@ -35,12 +35,12 @@ for x in valores:
         countPar += 1
         par = x
 
-if countPar >= 1:
-    if countPar == 1:
-        print(f'\nO único número par lido foi o {par}.')
-    if countPar > 1:
-        print(f'\nOs números pares digitados foram: ', end='')
-        for x in valores:
-            if x % 2 == 0:
-                print(f'{x} ', end='')
+if countPar == 1:
+    print(f'\nO único número par lido foi o {par}.')
+if countPar > 1:
+    print(f'\nOs números pares digitados foram: ', end='')
+    for x in valores:
+        if x % 2 == 0:
+            print(f'{x} ', end='')
+
 print()
