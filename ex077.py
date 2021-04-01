@@ -10,4 +10,3 @@ for x in palavras:
     for y in x:
         if y in 'aeiou':
             print(y, end=' ')
-    print()
