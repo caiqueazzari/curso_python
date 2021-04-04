@@ -14,7 +14,7 @@ sleep(1)
 for x in range(1, 5):
     sorteado[f'Jogador {x}'] = randint(1, 6)
 for x, y in sorteado.items():
-    print(f'O {x} tirou {y}.')
+    print(f'O {x} tirou {y} no dado.')
     sleep(1)
 
 print('\nRanking dos jogadores: ')
@@ -25,6 +25,29 @@ for x in sorted(sorteado.values(), reverse=True):
             continue
         if x == v:
             lugar += 1
-            print(f'{lugar}° lugar: {k} com {v}')
+            print(f'{lugar}° lugar: {k} com {v}.')
             sleep(1)
             lista.append(k)
+
+#Resolução com itemgetter
+'''
+from random import randint
+from operator import itemgetter
+from time import sleep
+
+sorteado = dict()
+
+print('\nValores sorteados: ')
+sleep(1)
+for x in range(1, 5):
+    sorteado[f'Jogador {x}'] = randint(1, 6)
+for x, y in sorteado.items():
+    print(f'O {x} tirou {y} no dado.')
+    sleep(1)
+
+print('\nRanking dos jogadores: ')
+ranking = sorted(sorteado.items(), key=itemgetter(1), reverse=True)
+for x, y in enumerate(ranking):
+    print(f'{x + 1}º lugar: {y[0]} com {y[1]}.')
+    sleep(1)
+'''
