@@ -12,6 +12,6 @@ if dados['Média'] < 7:
     dados['Situação'] = 'Reprovado'
 elif dados['Média'] >= 7:
     dados['Situação'] = 'Aprovado'
-
+print()
 for k, v in dados.items():
     print(f'{k} é igual a {v}.')
