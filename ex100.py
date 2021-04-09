@@ -11,6 +11,10 @@ num = []
 
 
 def sorteia(lista):
+    """
+    :param lista: Lista a ser usada na função
+    Função criada por Caique Azzari
+    """
     print('Sorteando 5 valores da lista: ', end='')
     for x in range(0, 5):
         lista.append(randint(1, 10))
@@ -26,6 +30,8 @@ def somaPar(lista):
             soma += x
     print(f'Somando os valores pares de {num}, temos {soma}.')
 
+
 sorteia(num)
 somaPar(num)
 
+help(sorteia)
