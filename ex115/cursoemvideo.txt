@@ -1,0 +1,4 @@
+José;35
+Caique;46
+caique;0
+caique;3

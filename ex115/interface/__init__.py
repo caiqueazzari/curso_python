@@ -40,7 +40,7 @@ def menu(lst):
                 break
         if 0 < escolha < len(lst):
             cabeçalho(f'{f"Opção {escolha}"}', cor=4)
+            return escolha
         else:
             cabeçalho(f'{"Saindo :("}', cor=1)
             break
-        return escolha
