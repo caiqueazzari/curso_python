@@ -1,3 +1,8 @@
-from funções import menu
+from interface import *
 
-menu()
+opções = ['Ver pessoas cadastradas no sistema',
+          'Cadastrar nova pessoa',
+          'Idades',
+          'Sair do sistema']
+
+print(menu(opções))
