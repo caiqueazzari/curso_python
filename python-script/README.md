@@ -1,4 +1,6 @@
-# How to execute a Python Script
+# Python Script
+
+## How to execute a Python Script
 
 ```
 #!/usr/bin/python3
@@ -6,7 +8,7 @@
 print('Hello')
 ```
 
-# Make it an executable
+### Make it an executable
 
 ```
 root@kali:~$ chmod 744 hello.py
